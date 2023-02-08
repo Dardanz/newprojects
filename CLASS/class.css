@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+#loggedOut,
+#loggedIn {
+  display: flex;
+  align-items: center;
+}
+
+#loggedOut p,
+#loggedIn p {
+  margin-right: 10px;
+}
+
+#loadingRing {
+  display: none;
+  margin-right: 10px;
+  border: 4px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: #fff
